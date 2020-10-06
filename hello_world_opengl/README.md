@@ -7,7 +7,7 @@ Repositório para abrigar as atividades desenvolvidas na disciplina de Introduç
 
 
 [<img src="https://rawgit.com/eug/awesome-opengl/master/opengl-logo.svg" align="right" width="140">](https://www.opengl.org)
-<img src="./../images/modern_opengl.png">
+<img src="../images/modern_opengl.png">
 
 ## Objetivos
 <ol>
