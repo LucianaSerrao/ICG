@@ -44,7 +44,7 @@ typedef struct {
 }pixels;
 ```
 ### 1 - putPixel
-Essa função representa pixels a partir do conjunto de coordenadas e cores dadas pelo usuário, utilizando o framework disponibilizado.
+>Essa função representa pixels a partir do conjunto de coordenadas e cores dadas pelo usuário, utilizando o framework disponibilizado.
 ```
 void putPixel(pixels P){
     
@@ -103,7 +103,7 @@ void MyGlDraw(void) {
 <img src="images/draw_line.png">
 
 ### 3 - DrawTriangle
-Depois de implementar a rasterização de retas, desenhar um triângulo torna-se uma tarefa simples. Tendo em vista que todo triângulo é formado por três retas que se conectam. Assim, a função foi referenciada em void MyGlDraw(void) da forma seguinte:
+>Depois de implementar a rasterização de retas, desenhar um triângulo torna-se uma tarefa simples. Tendo em vista que todo triângulo é formado por três retas que se conectam. Assim, a função foi referenciada em void MyGlDraw(void) da forma seguinte:
 ```
 void MyGlDraw(void) {
     pixels P1 = {100, 300, 255, 255, 127, 0};  //ponto vermelho na posicao (150,130)
@@ -117,12 +117,10 @@ void MyGlDraw(void) {
 <img src="images/draw_triangle.png">
 
 ## Resultados e dificuldades encontradas
-O trabalho conseguiu foi executado completa e corretamente, apresentando resultados coerentes. 
+>O trabalho conseguiu foi executado completa e corretamente, apresentando resultados coerentes. 
 Uma das dificuldades foi a difusão do algoritmo de Bresenham para todos os octantes.
 
 ## Referências
-
-http://www.demic.fee.unicamp.br/~jeff/ArquivosIndex/Bresenham
 
 https://slideplayer.com.br/slide/366939/https://slideplayer.com.br/slide/366939/
 
