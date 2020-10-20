@@ -168,7 +168,7 @@ void drawLine(pixels P1, pixels P2){
 
 void DrawTriangle(pixels P1, pixels P2, pixels P3){
     drawLine(P1,P2);
-    drawLine(P2,P3);
+    drawLine(P3,P2);
     drawLine(P3,P1);
 }
 
@@ -190,7 +190,7 @@ void MyGlDraw(void) {
 
     //testando linhas
 
-    pixels P1 = {90, 90, 255, 0, 0, 255};  //ponto vermelho na posicao (90, 90)
+/*    pixels P1 = {90, 90, 255, 0, 0, 255};  //ponto vermelho na posicao (90, 90)
     pixels P2 = {300, 150, 0, 255, 0, 255}; //ponto verde na posicao (300, 150)
     pixels P3 = {90, 120, 0, 0, 255, 255}; //ponto azul na posicao (90, 120)
     pixels P4 = {300, 180, 255, 0, 0, 255};  //ponto vermelho na posicao (150,130)
@@ -200,4 +200,12 @@ void MyGlDraw(void) {
     drawLine(P1,P2);
     drawLine(P3,P4);
     drawLine(P5,P6);
+    */
+
+    pixels P1 = {106, 406, 255, 255, 127, 0};  //ponto vermelho na posicao (150,130)
+    pixels P2 = {90, 106, 255, 238, 0, 0}; //ponto verde na posicao (216,250)
+    pixels P3 = {406, 406, 255, 0, 176, 0}; //ponto azul na posicao (300,250)
+
+    DrawTriangle(P1,P2,P3);
+
 }
