@@ -17,8 +17,13 @@ void MyGlDraw(void);
 // >>> Caro aluno: declare aqui as funções que você implementar <<<
 //
 
-void putPixel(struct pixels);  // calculo do offset
-void drawLine(struct pixels,struct pixels);
-void drawTriangle(struct pixels, struct pixels, struct pixels);
+typedef struct {
+    int x,y;
+    int Red,Green,Blue,Alpha;
+}pixels;
+
+void putPixel(pixels P);  // calculo do offset
+void drawLine(pixels P1, pixels P2);
+void drawTriangle(pixels P1,  pixels P2,  pixels P3);
 
 #endif  // MYGL_H

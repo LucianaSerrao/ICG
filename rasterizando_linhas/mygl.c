@@ -26,12 +26,7 @@ void CloseMyGl(void) {
 // >>> Caro aluno: defina aqui as funções que você implementar <<<
 //
 
-struct pixels {
-    int x,y;
-    int Red,Green,Blue,Alpha;
-};
-
-void putPixel(struct pixels P){
+void putPixel(pixels P){
     
     fb_ptr[(4*P.x) + (4*IMAGE_WIDTH*P.y) + 0] = P.Red; //calculo do offset para a luz vermelha
     fb_ptr[(4*P.x) + (4*IMAGE_WIDTH*P.y) + 1] = P.Green; //calculo do offset para a luz verde
@@ -39,7 +34,7 @@ void putPixel(struct pixels P){
     fb_ptr[(4*P.x) + (4*IMAGE_WIDTH*P.y) + 3] = P.Alpha; //calculo do offset para a luz transparente
 }
 
-void drawLine(struct pixels P1, struct pixels P2){
+void drawLine(pixels P1, pixels P2){
 
     int dx = P2.x - P1.x; // calculo do delta x entre 2 pontos
     int dy = P2.y - P1.y; // calculo do delta y entre 2 pontos
@@ -47,7 +42,7 @@ void drawLine(struct pixels P1, struct pixels P2){
     int incre_L, incre_NE; //variaveis de decisao de direção (leste ou nordeste)
     int prox_x, prox_y;
 
-    int distancia_total, D; // D é a variavel de decisao para o 1º pixel
+    int D; // D é a variavel de decisao para o 1º pixel
 
 
     //definindo todos os valores de x e y em todos os 8 octantes
@@ -171,7 +166,7 @@ void drawLine(struct pixels P1, struct pixels P2){
     }
 }
 
-void DrawTriangle(struct pixels P1, struct pixels P2, struct pixels P3){
+void DrawTriangle(pixels P1, pixels P2, pixels P3){
     drawLine(P1,P2);
     drawLine(P2,P3);
     drawLine(P3,P1);
@@ -182,9 +177,9 @@ void MyGlDraw(void) {
     //
     // >>> Caro aluno: chame aqui as funções que você implementou <<<
     //
-    struct pixels P1 = {336, 30, 255, 0, 0, 255};
-    struct pixels P2 = {196, 450, 0, 255, 0, 255};
-    struct pixels P3 = {456, 450, 0, 0, 255, 255};
+    pixels P1 = {336, 30, 255, 0, 0, 255};
+    pixels P2 = {196, 450, 0, 255, 0, 255};
+    pixels P3 = {456, 450, 0, 0, 255, 255};
 
     DrawTriangle(P1,P2,P3);
 }
