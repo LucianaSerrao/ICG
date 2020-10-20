@@ -202,9 +202,9 @@ void MyGlDraw(void) {
     drawLine(P5,P6);
     */
 
-    pixels P1 = {106, 406, 255, 255, 127, 0};  //ponto vermelho na posicao (150,130)
-    pixels P2 = {90, 106, 255, 238, 0, 0}; //ponto verde na posicao (216,250)
-    pixels P3 = {406, 406, 255, 0, 176, 0}; //ponto azul na posicao (300,250)
+    pixels P1 = {100, 300, 255, 255, 127, 0};  //ponto vermelho na posicao (150,130)
+    pixels P2 = {90, 100, 255, 238, 0, 0}; //ponto verde na posicao (216,250)
+    pixels P3 = {270, 300, 255, 0, 176, 0}; //ponto azul na posicao (300,250)
 
     DrawTriangle(P1,P2,P3);
 
