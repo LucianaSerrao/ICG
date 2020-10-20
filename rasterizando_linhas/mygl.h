@@ -19,7 +19,10 @@ void MyGlDraw(void);
 
 typedef struct {
     int x,y;
-    int Red,Green,Blue,Alpha;
+    int Red;
+    int Green;
+    int Blue;
+    int Alpha;
 }pixels;
 
 void putPixel(pixels P);  // calculo do offset
