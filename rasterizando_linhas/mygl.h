@@ -18,7 +18,8 @@ void MyGlDraw(void);
 //
 
 typedef struct {
-    int x,y;
+    int x;
+    int y;
     int Red;
     int Green;
     int Blue;

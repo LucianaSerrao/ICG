@@ -178,15 +178,26 @@ void MyGlDraw(void) {
     // >>> Caro aluno: chame aqui as funções que você implementou <<<
     //
 
-    pixels P1 = {150, 130, 255, 0, 0, 255};  //ponto vermelho na posicao (150,130)
-    putPixel(P1);
-    
-    pixels P2 = {200, 450, 0, 230, 0, 255}; //ponto verde na posicao (216,450)
-    putPixel(P2);
-    
-    pixels P3 = {300, 450, 0, 0, 255, 255}; //ponto azul na posicao (300,450)
-    putPixel(P3);
+/*  pixels P1 = {150, 130, 255, 0, 0, 255};  //ponto vermelho na posicao (150,130)
+    pixels P2 = {200, 250, 0, 255, 0, 255}; //ponto verde na posicao (216,250)
+    pixels P3 = {300, 280, 0, 0, 255, 255}; //ponto azul na posicao (300,250)
 
-    DrawTriangle(P1,P2,P3);
+    //testando pontos
+    putPixel(P1);    
+    putPixel(P2);    
+    putPixel(P3);
+    */
+
+    //testando linhas
+
+    pixels P1 = {90, 90, 255, 0, 0, 255};  //ponto vermelho na posicao (90, 90)
+    pixels P2 = {300, 150, 0, 255, 0, 255}; //ponto verde na posicao (300, 150)
+    pixels P3 = {90, 120, 0, 0, 255, 255}; //ponto azul na posicao (90, 120)
+    pixels P4 = {300, 180, 255, 0, 0, 255};  //ponto vermelho na posicao (150,130)
+    pixels P5 = {90, 150, 0, 255, 0, 255}; //ponto verde na posicao (90, 150)
+    pixels P6 = {300, 210, 0, 0, 255, 255}; //ponto azul na posicao (300,250)
     
+    drawLine(P1,P2);
+    drawLine(P3,P4);
+    drawLine(P5,P6);
 }
